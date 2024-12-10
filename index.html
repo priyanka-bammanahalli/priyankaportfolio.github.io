@@ -5,11 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./color-4.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./color-1.css"
+      class="alternate-style"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./color-3.css"
+      class="alternate-style"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./color-4.css"
+      class="alternate-style"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./color-5.css"
+      class="alternate-style"
+      title="color-5"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./color-6.css"
+      class="alternate-style"
+      title="color-6"
+      disabled
+    />
+    <link rel="stylesheet" href="./style-switcher.css" />
   </head>
 
   <body>
@@ -34,26 +82,28 @@
           <img class="cross" src="cross.png" alt="" />
         </div> -->
     <header>
-      <nav>
-        <div class="Main-header">
-          <h2 class="logo">Priyanka Bammanahalli</h2>
-          <label for="check" class="checkbox">
-            <i class="ri-menu-line"></i>
-          </label>
-          <input type="checkbox" name="check" id="check" />
-          <ul class="header-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#aboutMe">About Me</a></li>
-            <li><a href="#skills">My Skills</a></li>
-            <li><a href="#My-project">My Projects</a></li>
-            <li><a href="#My-cv">My CV</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-          </ul>
-        </div>
+      <div class="logo-container">
+        <img src="./assets/2.png" alt="light logo" class="logo light-logo" />
+        <img src="./assets/1.png" alt="Dark logo" class="logo dark-logo" />
+      </div>
+      <h2>Priyanka Bammanahalli</h2>
+      <nav class="Main-header">
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul class="header-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#My-project">My Projects</a></li>
+          <li><a href="#My-cv">My CV</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
       </nav>
     </header>
 
-    <!-- ####################################################### HOME PAGE ########################################################## -->
+    <!-- ####################################################### HOME PAGE START ########################################################## -->
 
     <section class="section" id="home">
       <div class="section-container">
@@ -64,7 +114,7 @@
           <div class="wrapper">
             <div class="static-text">I'm a</div>
             <ul class="dynamic-text">
-              <li><span>UX designer</span></li>
+              <li><span>UI designer</span></li>
               <li><span>Frontend Developer</span></li>
             </ul>
           </div>
@@ -82,8 +132,9 @@
         </div>
       </div>
     </section>
+    <!-- ####################################################### HOME PAGE END ########################################################## -->
 
-    <!-- ####################################################### ABOUT PAGE ########################################################## -->
+    <!-- ####################################################### ABOUT PAGE START ########################################################## -->
 
     <section class="section" id="aboutMe">
       <div class="section-container">
@@ -121,188 +172,171 @@
         </div>
       </div>
     </section>
+    <!-- ####################################################### ABOUT PAGE END ########################################################## -->
 
-    <!-- ####################################################### SKILLS PAGE ########################################################## -->
+    <!-- ####################################################### SKILLS PAGE START ########################################################## -->
 
     <section class="section" id="skills">
       <div class="section-container">
-        <div class="inner">
-          <div class="header">
-            <h1>My Skills</h1>
-          </div>
-          <div class="skillsContainer">
-            <!-- HTML -->
-
-            <div class="skills-box">
-              <div class="skillsTitle">
-                <div class="skillsImg">
-                  <img src="./assets/Html.jpeg" alt="html" class="skill-Icon" />
-                </div>
-                <h3>HTML 5</h3>
-              </div>
-              <p>
-                I have a solid understanding of HTML and am proficient in
-                writing clean and semantic markup. I am familiar with all the
-                standard HTML5 elements and attributes, and I can effectively
-                structure web pages using them.
-              </p>
-            </div>
-
-            <!-- CSS -->
-
-            <div class="skills-box">
-              <div class="skillsTitle">
-                <div class="skillsImg">
-                  <img src="./assets/css.jpeg" alt="css" class="skill-Icon" />
-                </div>
-                <h3>CSS 3</h3>
-              </div>
-              <p>
-                I have a good understanding of CSS, proficient in styling web
-                pages for layout, colors, fonts, and overall appearance. I can
-                also create responsive designs for various screen sizes.
-              </p>
-            </div>
-
-            <!-- JAVASCRIPT -->
-
-            <div class="skills-box">
-              <div class="skillsTitle">
-                <div class="skillsImg">
-                  <img
-                    src="./assets/javascript.jpeg"
-                    alt="javascript"
-                    class="skill-Icon"
-                  />
-                </div>
-                <h3>JavaScript</h3>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quos necessitatibus qui velit alias? Inventore id voluptatem a
-                fugit aut.
-              </p>
-            </div>
-
-            <!-- PHP -->
-
-            <div class="skills-box">
-              <div class="skillsTitle">
-                <div class="skillsImg">
-                  <img src="./assets/Php.jpeg" alt="php" class="skill-Icon" />
-                </div>
-                <h3>Php</h3>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quos necessitatibus qui velit alias? Inventore id voluptatem a
-                fugit aut.
-              </p>
-            </div>
-
-            <!-- MYSQL -->
-
-            <div class="skills-box">
-              <div class="skillsTitle">
-                <div class="skillsImg">
-                  <img
-                    src="./assets/MySQL.jpeg"
-                    alt="Mysql"
-                    class="skill-Icon"
-                  />
-                </div>
-                <h3>My SQL</h3>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quos necessitatibus qui velit alias? Inventore id voluptatem a
-                fugit aut.
-              </p>
-            </div>
-
-            <!-- PYTHON -->
-
-            <div class="skills-box">
-              <div class="skillsTitle">
-                <div class="skillsImg">
-                  <img
-                    src="./assets/Python.jpeg"
-                    alt="python"
-                    class="skill-Icon"
-                  />
-                </div>
-                <h3>PYTHON</h3>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quos necessitatibus qui velit alias? Inventore id voluptatem a
-                fugit aut.
-              </p>
-            </div>
-
-            <div class="skills-box">
-              <div class="skillsTitle">
-                <div class="skillsImg">
-                  <img src="./assets/Git.jpeg" alt="git" class="skill-Icon" />
-                </div>
-                <h3>GIT</h3>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quos necessitatibus qui velit alias? Inventore id voluptatem a
-                fugit aut.
-              </p>
-            </div>
-
-            <div class="skills-box">
-              <div class="skillsTitle">
-                <div class="skillsImg">
-                  <img
-                    src="./assets/Figma.jpeg"
-                    alt="figma"
-                    class="skill-Icon"
-                  />
-                </div>
-                <h3>FIGMA</h3>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quos necessitatibus qui velit alias? Inventore id voluptatem a
-                fugit aut.
-              </p>
-            </div>
-
-            <!-- <div class="skills-box">
-                    <div class="skillsTitle">
-                      <div class="skillsImg">
-                        <img src="./ham.png" alt="html" class="skill-Icon"/>
-                      </div>
-                      <h3>HTML 5</h3>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                      quos necessitatibus qui velit alias? Inventore id voluptatem a
-                      fugit aut.
-                    </p>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ##################################################### PROJECT PAGE ######################################################## -->
-
-    <section class="section" id="My-project">
-      <div class="section-container">
-        <div class="project-inner">
-          <div class="project-header">
+        <div class="project-container">
+          <div class="title-container">
             <h3>My Projects</h3>
           </div>
+          <div class="details-container">
+            <h3>Technical Skills</h3>
+
+            <article class="artical-container">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="light-icon"
+              ></ion-icon>
+              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article class="artical-container">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="light-icon"
+              ></ion-icon>
+              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article class="artical-container">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="light-icon"
+              ></ion-icon>
+              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
+              <div>
+                <h3>JAVASCRIPT</h3>
+                <p>Intermidiate</p>
+              </div>
+            </article>
+            <article class="artical-container">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="light-icon"
+              ></ion-icon>
+              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
+              <div>
+                <h3>REACT</h3>
+                <p>Basics</p>
+              </div>
+            </article>
+            <article class="artical-container">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="light-icon"
+              ></ion-icon>
+              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
+              <div>
+                <h3>PHP</h3>
+                <p>Intermidiate</p>
+              </div>
+            </article>
+            <article class="artical-container">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="light-icon"
+              ></ion-icon>
+              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
+              <div>
+                <h3>MYSQL</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article class="artical-container">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="light-icon"
+              ></ion-icon>
+              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
+              <div>
+                <h3>PYTHON</h3>
+                <p>Intermidiate</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- professional skills -->
+          <div class="details-container">
+            <h3>Professional Skills</h3>
+
+            <article class="artical-container">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="light-icon"
+              ></ion-icon>
+              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
+              <div>
+                <h3>Creativity</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article class="artical-container">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="light-icon"
+              ></ion-icon>
+              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
+              <div>
+                <h3>Communication</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article class="artical-container">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="light-icon"
+              ></ion-icon>
+              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
+              <div>
+                <h3>Teamwork</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article class="artical-container">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="light-icon"
+              ></ion-icon>
+              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
+              <div>
+                <h3>Decision Making</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article class="artical-container">
+              <ion-icon
+                name="checkmark-circle-outline"
+                class="light-icon"
+              ></ion-icon>
+              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
+              <div>
+                <h3>Adaptability</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
+    <!-- ####################################################### SKILLS PAGE END ########################################################## -->
 
-    <!-- #################################################### CV PAGE ############################################################## -->
+    <!-- ##################################################### PROJECT PAGE START ######################################################## -->
+
+    <section class="section" id="My-project">
+      <div class="section-container"></div>
+    </section>
+    <!-- ####################################################### PROJECT PAGE END ########################################################## -->
+
+    <!-- #################################################### CV PAGE START ############################################################## -->
 
     <section class="section" id="My-cv">
       <div class="section-container">
@@ -314,8 +348,9 @@
         </div>
       </div>
     </section>
+    <!-- ####################################################### CV PAGE END   ########################################################## -->
 
-    <!-- #################################################### CONTACT PAGE ############################################################## -->
+    <!-- #################################################### CONTACT PAGE START ############################################################## -->
 
     <section class="section" id="contact">
       <div class="section-container">
@@ -365,7 +400,36 @@
         </div>
       </div>
     </section>
+    <!-- #################################################### CONTACT PAGE END ############################################################## -->
 
+    <!-- #################################################### STYLE SWITCHER START ############################################################## -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas"></i>
+      </div>
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        <span class="color-6" onclick="setActiveStyle('color-6')"></span>
+      </div>
+    </div>
+    <!-- #################################################### STYLE SWITCHER END ############################################################## -->
+    <script src="script-switcher.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <!-- <script src="./script.js"></script> -->
   </body>
 </html>
