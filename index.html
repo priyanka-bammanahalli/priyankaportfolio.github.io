@@ -94,13 +94,31 @@
         <input type="checkbox" name="check" id="check" />
         <ul class="header-list">
           <li><a href="#home">Home</a></li>
-          <li><a href="#aboutMe">About Me</a></li>
-          <li><a href="#skills">My Skills</a></li>
-          <li><a href="#My-project">My Projects</a></li>
-          <li><a href="#My-cv">My CV</a></li>
-          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#aboutMe">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#My-project">Projects</a></li>
+          <li><a href="#My-certificate">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <!-- Mobile Hamburger and Sidebar -->
+      <!-- <label for="check" class="checkbox">
+        <i class="ri-menu-line hamburger"></i>
+      </label>
+      <input type="checkbox" name="check" id="check" class="checkbox-input" />
+
+      <div class="mobile-sidebar" id="mobileSidebar">
+        <i class="fas fa-times close-btn" onclick="toggleSidebar()"></i>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutMe">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#My-project">Projects</a></li>
+          <li><a href="#My-certificate">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div> -->
     </header>
 
     <!-- ####################################################### HOME PAGE START ########################################################## -->
@@ -114,13 +132,13 @@
           <div class="wrapper">
             <div class="static-text">I'm a</div>
             <ul class="dynamic-text">
-              <li><span>UI designer</span></li>
+              <li><span>UI/UX designer</span></li>
               <li><span>Frontend Developer</span></li>
             </ul>
           </div>
           <div class="buttons">
-            <a href="./assets/Priyanka-Bammanahalli-Resume.pdf" target="_blank"
-              ><button><span>Download CV</span></button></a
+            <a href="./assets/Priyanka_Bammanahalli.pdf" target="_blank"
+              ><button><span>Resume</span></button></a
             >
             <a href="#contact"
               ><button><span>Contact Me</span></button></a
@@ -128,7 +146,7 @@
           </div>
         </div>
         <div class="devPic">
-          <img src="./assets/pinku.jpg" alt="Priyanka" />
+          <a href="#aboutMe"><img src="./assets/pinku.jpg" alt="Priyanka" /></a>
         </div>
       </div>
     </section>
@@ -145,29 +163,33 @@
 
           <p>
             As a beginner in the world of computer science, one area that
-            excites me the most is web development. The idea of creating
-            websites and web applications from scratch and seeing them come to
-            life on the internet is truly fascinating to me. <br /><br />
-            I'm just getting started with learning the basics, like HTML for
-            structuring web pages, CSS for styling them, and JavaScript for
-            adding interactivity. These foundational languages form the backbone
-            of web development, and I'm eager to deepen my understanding of each
-            one.
+            captivates me the most is Frontend Development, especially the UI/UX
+            design aspect. The ability to craft visually engaging and
+            user-friendly web interfaces excites me because it blends technology
+            with creativity a combination I deeply enjoy. Seeing a user
+            interface take shape from an idea to an interactive experience on
+            the screen is incredibly fulfilling.
             <br /><br />
-            I'm also exploring beginner-friendly frameworks and libraries like
-            Bootstrap, which make it easier to create responsive and dynamic web
-            experiences without diving too deep into complex coding.
+            I'm currently building my foundation in HTML, CSS, and JavaScript,
+            which are essential tools for structuring, styling, and adding
+            interactivity to web pages. Alongside these core technologies, I'm
+            also exploring design systems and beginner friendly frameworks like
+            Bootstrap to understand responsive design better and enhance the
+            user experience across devices.
             <br /><br />
-            What I find particularly intriguing about web development is its
-            creative aspect. Designing user interfaces, choosing color schemes,
-            and arranging elements on a page to create a seamless user
-            experience is something I'm looking forward to exploring further.
+            What truly drives my interest is design thinking understanding
+            user's needs, creating intuitive layouts, and choosing the right
+            color palettes, typography, and spacing to build interfaces that are
+            not only functional but also delightful to use. I find joy in tools
+            like Figma and Canva, which allow me to experiment with layout,
+            design prototypes, and visualize how users will interact with a
+            product.
             <br /><br />
-            Even though I'm just starting out, I'm excited about the potential
-            of web development to empower me to bring my ideas to life and share
-            them with the world. Whether it's building a personal blog, a
-            portfolio website, or a simple web-based game, I'm eager to dive in
-            and start creating.
+            Even though I'm just starting out, I see Frontend Development and
+            UI/UX Design as powerful skills that will allow me to bring
+            meaningful digital experiences to life. Whether it's a personal
+            portfolio, a mobile-friendly e-commerce page, or a user centered web
+            application, I'm excited to keep learning, designing, and building.
           </p>
         </div>
       </div>
@@ -176,179 +198,177 @@
 
     <!-- ####################################################### SKILLS PAGE START ########################################################## -->
 
-    <section class="section" id="skills">
+    <section class="section" id="skill">
       <div class="section-container">
-        <div class="project-container">
-          <div class="title-container">
-            <h3>My Projects</h3>
-          </div>
-          <div class="details-container">
-            <h3>Technical Skills</h3>
+        <div class="skills-section" id="skills">
+          <h1>Skills</h1>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <!-- <img src="path/to/figma-icon.svg" alt="Figma Icon" /> -->
+              <h3>Figma</h3>
+              <p>Creating wireframes, prototypes & UI design systems.</p>
+            </div>
 
-            <article class="artical-container">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="light-icon"
-              ></ion-icon>
-              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
-              <div>
-                <h3>HTML</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="artical-container">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="light-icon"
-              ></ion-icon>
-              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
-              <div>
-                <h3>CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="artical-container">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="light-icon"
-              ></ion-icon>
-              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
-              <div>
-                <h3>JAVASCRIPT</h3>
-                <p>Intermidiate</p>
-              </div>
-            </article>
-            <article class="artical-container">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="light-icon"
-              ></ion-icon>
-              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
-              <div>
-                <h3>REACT</h3>
-                <p>Basics</p>
-              </div>
-            </article>
-            <article class="artical-container">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="light-icon"
-              ></ion-icon>
-              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
-              <div>
-                <h3>PHP</h3>
-                <p>Intermidiate</p>
-              </div>
-            </article>
-            <article class="artical-container">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="light-icon"
-              ></ion-icon>
-              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
-              <div>
-                <h3>MYSQL</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="artical-container">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="light-icon"
-              ></ion-icon>
-              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
-              <div>
-                <h3>PYTHON</h3>
-                <p>Intermidiate</p>
-              </div>
-            </article>
-          </div>
+            <div class="skill-card">
+              <!-- <img src="path/to/research-icon.svg" alt="User Research" /> -->
+              <h3>User Research</h3>
+              <p>Persona creation, interviews & empathy mapping.</p>
+            </div>
 
-          <!-- professional skills -->
-          <div class="details-container">
-            <h3>Professional Skills</h3>
+            <div class="skill-card">
+              <!-- <img src="path/to/testing-icon.svg" alt="Usability Testing" /> -->
+              <h3>Usability Testing</h3>
+              <p>Testing designs with real users & iterating solutions.</p>
+            </div>
 
-            <article class="artical-container">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="light-icon"
-              ></ion-icon>
-              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
-              <div>
-                <h3>Creativity</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="artical-container">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="light-icon"
-              ></ion-icon>
-              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
-              <div>
-                <h3>Communication</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="artical-container">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="light-icon"
-              ></ion-icon>
-              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
-              <div>
-                <h3>Teamwork</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="artical-container">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="light-icon"
-              ></ion-icon>
-              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
-              <div>
-                <h3>Decision Making</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article class="artical-container">
-              <ion-icon
-                name="checkmark-circle-outline"
-                class="light-icon"
-              ></ion-icon>
-              <ion-icon name="checkmark-circle" class="dark-icon"></ion-icon>
-              <div>
-                <h3>Adaptability</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
+            <div class="skill-card">
+              <!-- <img src="path/to/html-icon.svg" alt="HTML5" /> -->
+              <h3>HTML5</h3>
+              <p>Semantic structure & best practices.</p>
+            </div>
+
+            <div class="skill-card">
+              <!-- <img src="path/to/css-icon.svg" alt="CSS3" /> -->
+              <h3>CSS3</h3>
+              <p>Responsive layout & modern design.</p>
+            </div>
+
+            <div class="skill-card">
+              <!-- <img src="path/to/js-icon.svg" alt="JavaScript" /> -->
+              <h3>JavaScript</h3>
+              <p>Interactive and dynamic web elements.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- ####################################################### SKILLS PAGE END ########################################################## -->
 
     <!-- ##################################################### PROJECT PAGE START ######################################################## -->
 
     <section class="section" id="My-project">
-      <div class="section-container"></div>
-    </section>
-    <!-- ####################################################### PROJECT PAGE END ########################################################## -->
-
-    <!-- #################################################### CV PAGE START ############################################################## -->
-
-    <section class="section" id="My-cv">
       <div class="section-container">
-        <div class="cv-section">
-          <object
-            data="./assets/Priyanka-Bammanahalli-Resume.pdf"
-            type="application/pdf"
-          ></object>
+        <div class="project-section" id="My-project">
+          <h1>Projects</h1>
+          <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+              <h3 class="project-title">Movie Ticket Booking UI</h3>
+              <p class="project-desc">
+                Designed an intuitive movie ticket booking experience using
+                Figma with modern UI components and user flow.
+              </p>
+              <span class="project-type">Figma Design</span>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+              <h3 class="project-title">E-commerce Mobile App</h3>
+              <p class="project-desc">
+                Crafted a mobile shopping app UI in Figma with seamless
+                navigation and visual hierarchy for user engagement.
+              </p>
+              <span class="project-type">Figma Design</span>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+              <h3 class="project-title">Wake Wise App</h3>
+              <p class="project-desc">
+                A conceptual app UI in Figma focused on wellness and
+                productivity with a calming interface.
+              </p>
+              <span class="project-type">Figma Design</span>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+              <h3 class="project-title">Kreo Clone Website</h3>
+              <p class="project-desc">
+                Built a clone of the Kreo website, including login and
+                registration with backend database integration.
+              </p>
+              <span class="project-type">Web Development</span>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+              <h3 class="project-title">Netflix UI Clone</h3>
+              <p class="project-desc">
+                Designed a static Netflix homepage using HTML/CSS to replicate
+                its engaging user interface.
+              </p>
+              <span class="project-type">Frontend UI</span>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card">
+              <h3 class="project-title">Tour and Travel Website</h3>
+              <p class="project-desc">
+                Developed a dynamic Tour & Travel website with HTML, CSS, JS,
+                PHP, and MySQL, focused on user experience and accessibility.
+              </p>
+              <span class="project-type">Full Stack Dev</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- ####################################################### CV PAGE END   ########################################################## -->
+
+    <!-- ####################################################### PROJECT PAGE END ########################################################## -->
+
+    <!-- #################################################### Certificates PAGE START ############################################################## -->
+
+    <section class="section" id="My-certificate">
+      <div class="section-container">
+        <i
+          class="fa-solid fa-arrow-left"
+          style="color: #000000"
+          onclick="scrollCertificates(-1)"
+        ></i>
+        <div class="certificate-wrapper">
+          <div class="certificate-container" id="certificateContainer">
+            <div class="certificate-card">
+              <img
+                src="./assets/Priyanka_UX_Hackathon.jpeg"
+                alt="Certificate 1"
+              />
+              <p>2nd Place in UX Hackathon</p>
+            </div>
+            <div class="certificate-card">
+              <img src="./assets/Database_design.jpeg" alt="Certificate 2" />
+              <p>Learned Database Design Fundamentals</p>
+            </div>
+            <div class="certificate-card">
+              <img
+                src="./assets/Priyanka_Google_certificate.jpg"
+                alt="Certificate 3"
+              />
+              <p>Completed 7 Course on Google UX Design</p>
+            </div>
+            <div class="certificate-card">
+              <img
+                src="./assets/Priyanka_Reactjs_workshop.jpeg"
+                alt="Certificate 4"
+              />
+              <p>Participated React JS Workshop</p>
+            </div>
+            <div class="certificate-card">
+              <img src="./assets/web_development.jpg" alt="Certificate 5" />
+              <p>Learned HTML CSS and JavaScript for Web Developers</p>
+            </div>
+          </div>
+        </div>
+        <i
+          class="fa-solid fa-arrow-right"
+          style="color: #000000"
+          onclick="scrollCertificates(1)"
+        ></i>
+      </div>
+    </section>
+
+    <!-- ####################################################### Certificates PAGE END   ########################################################## -->
 
     <!-- #################################################### CONTACT PAGE START ############################################################## -->
 
@@ -421,6 +441,50 @@
       </div>
     </div>
     <!-- #################################################### STYLE SWITCHER END ############################################################## -->
+
+    <!-- #################################################### FOOTER START ############################################################## -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <h3>Priyanka Bammanahalli</h3>
+          <p>
+            Designing & building user-friendly experiences with passion and
+            precision.
+          </p>
+          <div class="footer-socials">
+            <a
+              href="https://www.linkedin.com/in/priyanka-bammanahalli/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/priyanka-bammanahalli" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="mailto:priyankasb1803@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a href="https://twitter.com/priyankasb1803" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#aboutMe">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#My-project">Projects</a>
+          <a href="#My-certificate">Certificates</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Priyanka Bammanahalli. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- #################################################### FOOTER END ############################################################## -->
+
     <script src="script-switcher.js"></script>
     <script
       type="module"
@@ -430,6 +494,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <!-- <script src="./script.js"></script> -->
+    <script src="./script.js"></script>
   </body>
 </html>
